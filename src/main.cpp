@@ -164,7 +164,8 @@ void loop()
     Serial.println(obj4);
 
     // Database.set<object_t>(aClient, "/test/json", json, asyncCB, "setJsonTask");
-    Database.set<object_t>(aClient, "/test/json", obj4, asyncCB, "setJsonTask");
+    // Database.set<object_t>(aClient, "/test/json", obj4, asyncCB, "setJsonTask");
+    Database.push<object_t>(aClient, "/test/json", obj4, asyncCB, "setJsonTask");
 
 
     // // Set timestamp
